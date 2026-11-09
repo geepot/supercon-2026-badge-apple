@@ -1,0 +1,11 @@
+/target/
+/.embuild
+/sdkconfig
+/sdkconfig.old
+/firmware/sdkconfig
+/firmware/sdkconfig.old
+/previews/
+/backups/
+.DS_Store
+__pycache__/
+/assets/video/

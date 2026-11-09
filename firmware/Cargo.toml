@@ -1,0 +1,24 @@
+[package]
+name = "badge-apple"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "badge-apple"
+test = false
+bench = false
+
+[dependencies]
+anyhow = "1"
+badge-apple-core = { path = "../crates/badge" }
+log = "0.4"
+
+[target.'cfg(target_os = "espidf")'.dependencies]
+esp-idf-svc = "0.53"
+
+[build-dependencies]
+embuild = "0.33.5"
+
+[[package.metadata.esp-idf-sys.extra_components]]
+component_dirs = ["components/pdi"]

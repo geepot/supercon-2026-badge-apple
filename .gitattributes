@@ -1,0 +1,2 @@
+# Keep vendored upstream files byte-identical.
+firmware/components/pdi/vendor/* -whitespace
